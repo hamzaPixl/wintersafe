@@ -1,0 +1,17 @@
+{
+  "header.greetings": "Witaj!",
+  "header.welcome": "Witamy w Wintersafe",
+  "home.help.title": "Jak możemy Ci pomóc?",
+  "home.help.description": "Jesteśmy tutaj, aby Ci pomóc. Proszę wybrać jedną z poniższych opcji.",
+  "home.other.title": "Znajdź potrzebne informacje o centrach w Brukseli",
+  "home.other.description": "Jesteśmy tutaj, aby Ci pomóc. Proszę wybrać jedną z poniższych opcji.",
+  "home.contact.title": "Kontakty, do których możesz się zwrócić",
+  "center.informations": "Informacje o centrum",
+  "notfound.title": "Strona nie znaleziona",
+  "notfound.message": "Strona, której szukasz, nie istnieje.",
+  "notfound.back": "Wróć do strony głównej",
+  "maintenance.title": "W trakcie konserwacji",
+  "maintenance.message": "Aktualnie trwa konserwacja. Wkrótce wrócimy.",
+  "maintenance.back": "Wróć do strony głównej",
+  "settings.language": "Język"
+}

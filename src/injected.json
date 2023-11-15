@@ -1,0 +1,44 @@
+{
+  "keywords": ["sos", "help", "brussels"],
+  "title": "Wintersafe - Help people before it's too late",
+  "description": "Wintersafe - Help people before it's too late",
+  "manifest": {
+    "projectShortName": "Wintersafe - Help people before it's too late",
+    "themeColor": "#11161E",
+    "url": "https://www.wintersafe.be/",
+    "description": "Wintersafe - Help people before it's too late",
+    "display": "standalone",
+    "orientation": "portrait",
+    "backgroundColor": "#11161E"
+  },
+  "gtag": "G-",
+  "pages": [
+    {
+      "title": "link.home",
+      "hideHeader": true,
+      "link": "/",
+      "meta": {
+        "title": "home.meta.title",
+        "description": "home.meta.description",
+        "keywords": []
+      }
+    },
+    {
+      "title": "link.help",
+      "hideHeader": true,
+      "link": "/",
+      "meta": {
+        "title": "help.meta.title",
+        "description": "help.meta.description",
+        "keywords": []
+      }
+    }
+  ],
+  "email": "contact@wintersafe.be",
+  "locales": ["fr", "nl", "en", "pl", "ru", "ar"],
+  "defaultLocale": "en",
+  "author": {
+    "name": "Pixl",
+    "url": "https://www.pixldev.be"
+  }
+}

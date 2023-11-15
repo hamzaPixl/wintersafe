@@ -1,0 +1,17 @@
+{
+  "header.greetings": "مرحبا!",
+  "header.welcome": "مرحبا بك في وينترسيف",
+  "home.help.title": "كيف يمكننا مساعدتك؟",
+  "home.help.description": "نحن هنا لمساعدتك. الرجاء اختيار أحد الخيارات أدناه.",
+  "home.other.title": "ابحث عن المعلومات الضرورية حول المراكز في بروكسل",
+  "home.other.description": "نحن هنا لمساعدتك. الرجاء اختيار أحد الخيارات أدناه.",
+  "home.contact.title": "جهات الاتصال التي يمكنك الوصول إليها",
+  "center.informations": "معلومات المركز",
+  "notfound.title": "الصفحة غير موجودة",
+  "notfound.message": "الصفحة التي تبحث عنها غير موجودة.",
+  "notfound.back": "العودة إلى الصفحة الرئيسية",
+  "maintenance.title": "تحت الصيانة",
+  "maintenance.message": "نحن حاليا تحت الصيانة. سنعود قريبا.",
+  "maintenance.back": "العودة إلى الصفحة الرئيسية",
+  "settings.language": "اللغة"
+}
