@@ -1,4 +1,7 @@
 {
+  "home.meta.title": "Wintersafe",
+  "home.meta.description": "Wintersafe is an application that allows the homeless to find a shelter in Brussels.",
+
   "header.greetings": "Hello !",
   "header.welcome": "Welcome to Wintersafe",
   "home.help.title": "How can we help you ?",
