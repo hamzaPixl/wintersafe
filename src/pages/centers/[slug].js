@@ -25,51 +25,45 @@ export default function CenterSlug() {
   return (
     <Layout>
       <Container>
-        <div className='items-center justify-between font-bold leading-normal flex flex-row gap-2 items-left'>
-          <p className='text-md'>{t('header.greetings')}</p>
-          <p className='text-md'>{t('header.welcome')}</p>
-        </div>
         <div className='items-center justify-between font-bold leading-normal flex flex-col gap-5 mt-20'>
-          <h1 className='text-4xl bg-primary-500 text-white p-5 rounded-xl'>{center?.name}</h1>
+          <h1 className='text-4xl'>{center?.name}</h1>
         </div>
-        <div className='grid grid-cols-2 gap-2'>
-          <div className='flex flex-col gap-5 justify-between mt-10'>
-            <h2 className='text-xl font-bold text-primary-500'>{t('center.informations')}</h2>
-            <div className='grid grid-cols-1 gap-4'>
-              <Link
-                className='flex flex-row gap-5 items-center text-primary-500'
-                href={`https://maps.google.com/?q=${center?.address?.coord?.lat},${center?.address?.coord?.long}`}
-              >
-                <LocationIcon />
-                <p className='font-bold text-secondary-900'>{`${center?.address?.rue}, ${center?.address?.numero}, ${center?.address?.cityHole} ${center?.address?.zip}`}</p>
-              </Link>
-              <Link
-                className='flex flex-row gap-5 items-center text-primary-500'
-                href={`tel:${center?.tel[0]}`}
-              >
-                <PhoneIcon />
-                <p className='font-bold text-secondary-900'>{`${center?.tel.join(',')}`}</p>
-              </Link>
-              <Link
-                className='flex flex-row gap-5 items-center text-primary-500'
-                href={`mailto:${center?.email}`}
-              >
-                <MailIcon />
-                <p className='font-bold text-secondary-900'>{`${center?.email}`}</p>
-              </Link>
-              <div className='flex flex-row gap-5 items-center text-primary-500'>
-                <TimeIcon />
-                <p className='font-bold text-secondary-900'>{`${center?.contact?.time}`}</p>
-              </div>
-              <Link
-                className='flex flex-row gap-5 items-center text-primary-500'
-                href={`${center?.web}`}
-              >
-                <WebIcon />
-                <p className='font-bold text-secondary-900'>{`${center?.web}`}</p>
-              </Link>
+        <div className='flex flex-col gap-5 justify-center items-center mt-10 shadow-xl rounded-xl p-5'>
+          <h2 className='text-xl font-bold'>{t('center.informations')}</h2>
+          <div className='grid grid-cols-1 gap-4'>
+            <Link
+              className='flex flex-row gap-5 items-center text-primary-500'
+              href={`https://maps.google.com/?q=${center?.address?.coord?.lat},${center?.address?.coord?.long}`}
+            >
+              <LocationIcon />
+              <p className='font-bold text-secondary-900'>{`${center?.address?.rue}, ${center?.address?.numero}, ${center?.address?.cityHole} ${center?.address?.zip}`}</p>
+            </Link>
+
+            <div className='flex flex-row gap-5 items-center text-primary-500'>
+              <TimeIcon />
+              <p className='font-bold text-secondary-900'>{`${center?.contact?.time}`}</p>
             </div>
           </div>
+        </div>
+        <div className='flex flex-row gap-5 justify-evenly items-center text-white my-10'>
+          <Link
+            className='flex flex-row gap-5 items-center rounded-full p-5 bg-primary-500'
+            href={`tel:${center?.tel[0]}`}
+          >
+            <PhoneIcon />
+          </Link>
+          <Link
+            className='flex flex-row gap-5 items-center rounded-full p-5 bg-primary-500'
+            href={`mailto:${center?.email}`}
+          >
+            <MailIcon />
+          </Link>{' '}
+          <Link
+            className='flex flex-row gap-5 items-center rounded-full p-5 bg-primary-500'
+            href={`${center?.web}`}
+          >
+            <WebIcon />
+          </Link>
         </div>
       </Container>
     </Layout>
