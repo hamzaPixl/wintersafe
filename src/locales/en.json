@@ -1,4 +1,7 @@
 {
+  "medical": "Medical",
+  "food": "Food",
+  "bed": "Bed",
   "home.meta.title": "Wintersafe",
   "home.meta.description": "Wintersafe is an application that allows the homeless to find a shelter in Brussels.",
   "header.greetings": "Hello !",

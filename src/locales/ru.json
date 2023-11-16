@@ -1,7 +1,9 @@
 {
   "home.meta.title": "Wintersafe",
   "home.meta.description": "Wintersafe - это приложение, которое помогает бездомным найти приют в Брюсселе.",
-
+  "medical": "Медицинский",
+  "food": "Еда",
+  "bed": "Кровать",
   "header.greetings": "Привет !",
   "header.welcome": "Добро пожаловать в Wintersafe",
   "home.help.title": "Как мы можем вам помочь?",
