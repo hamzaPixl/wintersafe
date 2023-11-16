@@ -1,7 +1,7 @@
 export default function LocationIcon() {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
-      <g clip-path='url(#clip0_119_2136)'>
+      <g clipPath='url(#clip0_119_2136)'>
         <path
           d='M12.5 8.33337C12.5 6.95266 11.3807 5.83337 10 5.83337C8.61929 5.83337 7.5 6.95266 7.5 8.33337C7.5 9.71409 8.61929 10.8334 10 10.8334C11.3807 10.8334 12.5 9.71409 12.5 8.33337Z'
           stroke='currentColor'

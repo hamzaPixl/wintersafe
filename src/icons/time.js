@@ -1,7 +1,7 @@
 export default function TimeIcon() {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
-      <g clip-path='url(#clip0_85_3181)'>
+      <g clipPath='url(#clip0_85_3181)'>
         <path
           d='M11.1915 2.55835C14.7415 3.15835 17.4415 6.23335 17.4415 9.95002C17.4415 14.0917 14.0831 17.45 9.94147 17.45C6.22481 17.45 3.1498 14.75 2.5498 11.2'
           stroke='currentColor'

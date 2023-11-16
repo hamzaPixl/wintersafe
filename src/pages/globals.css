@@ -69,9 +69,20 @@
   }
 }
 
+#__next,
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background: #f6f6f6;
+  min-height: 932px;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+  background: #f6f6f6;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, transparent, rgb(var(--secondary-end-rgb)))
-    rgb(var(--secondary-start-rgb));
 }

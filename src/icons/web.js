@@ -1,7 +1,7 @@
 export default function WebIcon() {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
-      <g clip-path='url(#clip0_75_4218)'>
+      <g clipPath='url(#clip0_75_4218)'>
         <path
           d='M10 2.58337C13.8917 6.69171 13.8917 13.3084 10 17.4167'
           stroke='currentColor'

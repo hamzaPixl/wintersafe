@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../../container/layout'
 import { useTranslate } from '../../hooks/useTranslate'
-import Container from '../../container/container'
 import centers from '../../api/processedCenters.json'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -24,24 +23,24 @@ export default function CenterSlug() {
 
   return (
     <Layout>
-      <Container>
-        <div className='items-center justify-between font-bold leading-normal flex flex-col gap-5 mt-20'>
-          <h1 className='text-4xl'>{center?.name}</h1>
-        </div>
+      <div className='flex flex-col gap-10'>
         <div className='flex flex-col gap-5 justify-center items-center mt-10 shadow-xl rounded-xl p-5'>
-          <h2 className='text-xl font-bold'>{t('center.informations')}</h2>
+          <h1 className='text-2xl font-bold p-2 bg-primary-500 text-white rounded-xl'>
+            {center?.name}
+          </h1>
+          <h2 className='text-xl'>{t('center.informations')}</h2>
           <div className='grid grid-cols-1 gap-4'>
             <Link
               className='flex flex-row gap-5 items-center text-primary-500'
               href={`https://maps.google.com/?q=${center?.address?.coord?.lat},${center?.address?.coord?.long}`}
             >
               <LocationIcon />
-              <p className='font-bold text-secondary-900'>{`${center?.address?.rue}, ${center?.address?.numero}, ${center?.address?.cityHole} ${center?.address?.zip}`}</p>
+              <p className='font-bold text-secondary-900/50'>{`${center?.address?.rue}, ${center?.address?.numero}, ${center?.address?.cityHole} ${center?.address?.zip}`}</p>
             </Link>
 
             <div className='flex flex-row gap-5 items-center text-primary-500'>
               <TimeIcon />
-              <p className='font-bold text-secondary-900'>{`${center?.contact?.time}`}</p>
+              <p className='font-bold text-secondary-900/50'>{`${center?.contact?.time}`}</p>
             </div>
           </div>
         </div>
@@ -65,7 +64,7 @@ export default function CenterSlug() {
             <WebIcon />
           </Link>
         </div>
-      </Container>
+      </div>
     </Layout>
   )
 }

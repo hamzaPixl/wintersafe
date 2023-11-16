@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../container/layout'
 import { useTranslate } from '../hooks/useTranslate'
-import Container from '../container/container'
 import Image from 'next/image'
 import Link from 'next/link'
 import MedicalIcon from '../icons/medical'
@@ -12,12 +11,12 @@ export default function Home() {
   const { t } = useTranslate()
   return (
     <Layout>
-      <Container>
+      <div className='flex flex-col gap-10'>
         <div className='mt-5 font-bold leading-normal flex flex-col gap-2 items-left'>
           <p className='text-xl'>{t('header.greetings')}</p>
           <p className='text-md text-secondary-900/50'>{t('home.other.description')}</p>
           <p className='text-xl mt-5'>{t('home.other.description')}</p>
-          <div className='flex flex-row justify-between items-center gap-3 mt-5'>
+          <div className='grid grid-cols-3 gap-5 mt-5 max-w-lg align-center'>
             <Link
               href={'/help?category=bed'}
               className='p-10 gap-4 flex flex-col justify-center items-center bg-white text-secondary-900 shadow-xl rounded-2xl hover:bg-primary-500 hover:text-white transition-all duration-300 ease-in-out'
@@ -41,7 +40,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className='my-20 font-bold leading-normal flex justify-center items-center flex-col gap-2 items-left'>
+        <div className='mt-10 font-bold leading-normal flex flex-col gap-2 items-left'>
           <p className='text-xl'>{t('home.contact.title')}</p>
           <div className='grid grid-cols-1 gap-3 w-full mt-2'>
             <Link href={'tel:112'}>
@@ -94,7 +93,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </Container>
+      </div>
     </Layout>
   )
 }

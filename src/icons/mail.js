@@ -1,7 +1,7 @@
 export default function MailIcon() {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
-      <g clip-path='url(#clip0_391_2019)'>
+      <g clipPath='url(#clip0_391_2019)'>
         <path
           d='M16.1333 4.20837H3.86667C3.11188 4.20837 2.5 4.82025 2.5 5.57504V14.4334C2.5 15.1882 3.11188 15.8 3.86667 15.8H16.1333C16.8881 15.8 17.5 15.1882 17.5 14.4334V5.57504C17.5 4.82025 16.8881 4.20837 16.1333 4.20837Z'
           stroke='currentColor'

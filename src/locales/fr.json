@@ -1,4 +1,7 @@
 {
+  "medical": "Médical",
+  "food": "Nourriture",
+  "bed": "Lit",
   "home.meta.title": "Wintersafe",
   "home.meta.description": "Wintersafe est une application qui permet aux sans-abris de trouver un centre d'accueil à Bruxelles.",
   "header.greetings": "Bonjour !",

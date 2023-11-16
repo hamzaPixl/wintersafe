@@ -2,14 +2,15 @@ import React from 'react'
 import SEO from './seo'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Container from './container'
 
 export default function Layout({ children }) {
   return (
     <>
-      <main>
+      <main className='main'>
         <SEO />
         <Header />
-        {children}
+        <Container>{children}</Container>
         <Footer />
       </main>
     </>
