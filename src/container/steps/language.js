@@ -55,7 +55,7 @@ export default function Language({ onChange }) {
             id={language.id}
             onClick={() => onClick(language.id)}
             className={cn(
-              'p-5 border-2 border-secondary-900 rounded-3xl cursor-pointer',
+              'p-5 border-2 border-secondary-900 rounded-3xl cursor-pointer shadow-lg',
               locale === language.id ? 'text-primary-500 border-primary-500' : 'text-secondary-900',
             )}
           >
