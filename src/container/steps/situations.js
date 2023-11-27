@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { useTranslate } from '../../hooks/useTranslate'
+import { cn } from '../../utils/cn'
 
 const situations = [
   {
@@ -51,11 +52,10 @@ export default function Situation({ situation, onChange }) {
             key={st.id}
             id={st.id}
             onClick={() => onChange(st.id)}
-            className={`p-5 w-fit rounded-3xl cursor-pointer ${
-              situation === st.id
-                ? 'text-primary-500 border-2 border-primary-500'
-                : 'text-secondary-900 border-2 border-secondary-900'
-            }`}
+            className={cn(
+              'p-5 border-2 border-secondary-900 rounded-3xl cursor-pointer',
+              situation === st.id ? 'text-primary-500 border-primary-500' : 'text-secondary-900',
+            )}
           >
             <Image src={st.image} width={50} alt={t(st.title)} height={50} />
           </div>

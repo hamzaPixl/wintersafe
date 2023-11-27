@@ -1,5 +1,6 @@
 import { useLocale } from '../../hooks/useLocale'
 import { useTranslate } from '../../hooks/useTranslate'
+import { cn } from '../../utils/cn'
 
 const languages = [
   {
@@ -53,11 +54,10 @@ export default function Language({ onChange }) {
             key={language.id}
             id={language.id}
             onClick={() => onClick(language.id)}
-            className={`p-5 rounded-3xl cursor-pointer ${
-              locale === language.id
-                ? 'text-primary-500 border-2 border-primary-500'
-                : 'text-secondary-900 border-2 border-secondary-900 '
-            }`}
+            className={cn(
+              'p-5 border-2 border-secondary-900 rounded-3xl cursor-pointer',
+              locale === language.id ? 'text-primary-500 border-primary-500' : 'text-secondary-900',
+            )}
           >
             <p className='text-3xl'>{language.flag}</p>
             <p className='text-sm font-bold'>{language.title}</p>
