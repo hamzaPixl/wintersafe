@@ -45,13 +45,13 @@ export default function Situation({ situation, onChange }) {
   return (
     <section className='flex flex-col gap-10 my-5 justify-center'>
       <p className='font-bold text-2xl'>{t('select.situation')}</p>
-      <div className='grid grid-cols-3 gap-6 my-5'>
+      <div className='grid grid-cols-4 gap-5 my-5'>
         {situations.map((st) => (
           <div
             key={st.id}
             id={st.id}
             onClick={() => onChange(st.id)}
-            className={`p-5 w-fit rounded-3xl cursor-pointer first-letter:${
+            className={`p-5 w-fit rounded-3xl cursor-pointer ${
               situation === st.id
                 ? 'text-primary-500 border-2 border-primary-500'
                 : 'text-secondary-900 border-2 border-secondary-900'
