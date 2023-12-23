@@ -3,12 +3,13 @@ import Layout from '../container/layout'
 import { useTranslate } from '../hooks/useTranslate'
 import Language from '../container/steps/language'
 import Situation from '../container/steps/situations'
-import Button from '../components/button'
 import { useLocale } from '../hooks/useLocale'
+import { useRouter } from 'next/router'
 
 export default function Home() {
   const { t } = useTranslate()
 
+  const router = useRouter()
   const { locale } = useLocale()
   const [lang, setLang] = useState(locale)
   const [situation, setSituation] = useState()
@@ -26,6 +27,9 @@ export default function Home() {
     lang && sessionStorage.setItem('lang', lang)
     situation && sessionStorage.setItem('situation', situation)
     location && sessionStorage.setItem('location', location)
+    if (lang && situation && location) {
+      router.push(`/help?s=${situation}&lat=${location.lat}&lng=${location.lng}`)
+    }
   }, [lang, situation, location])
 
   return (
@@ -38,14 +42,6 @@ export default function Home() {
         <div className='flex flex-col gap-5 mt-5'>
           <Language onChange={setLang} />
           <Situation situation={situation} onChange={setSituation} />
-          {lang && situation && (
-            <Button
-              message={t('home.result.button')}
-              link={`/help?s=${situation}&lat=${location.lat}&lng=${location.lng}`}
-              primary
-              className='mt-5 w-full'
-            />
-          )}
         </div>
       </div>
     </Layout>

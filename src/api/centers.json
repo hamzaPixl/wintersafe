@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "New Samusocial",
+    "address": "Boulevard Pointcaré 66-68 - 1070 Anderlecht",
+    "tel": "0800/99.340",
+    "situation": ["male", "female", "couple", "femaleAndChildren", "maleAndChildren"]
+  },
+  {
+    "id": 2,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "Centre d'accueil d'urgence Ariane",
+    "address": "Avenue du Pont de Luttre  132 -1190 Forest",
+    "tel": "02/346.66.60",
+    "situation": ["male", "female", "couple", "femaleAndChildren", "maleAndChildren"]
+  },
+  {
+    "id": 3,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "Hébergement Croix-Rouge de Trèves",
+    "address": "Rue de Trèves 82, 1000 Bruxelles",
+    "tel": "0800/99.340",
+    "situation": ["male", "female", "family"]
+  },
+  {
+    "id": 4,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "CASU (Centre d'Action Sociale d'Urgence)",
+    "address": "Rue du Petit Rempart 5, 1000 Bruxelles",
+    "tel": "02.537.82.70",
+    "situation": []
+  },
+  {
+    "id": 5,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "La Source",
+    "address": "Rue de la Senne 78, 1000 Bruxelles",
+    "tel": "02.512.72.04",
+    "situation": ["male", "couple", "femaleAndChildren", "maleAndChildren", "family"]
+  },
+  {
+    "id": 6,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "Albatros - CAW Archipel",
+    "address": "Rue de la Buanderie 40, 1000 Bruxelles",
+    "tel": "02.511.53.30",
+    "situation": ["male", "female", "couple", "femaleAndChildren", "maleAndChildren", "family"]
+  },
+  {
+    "id": 7,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "Pierre d'Angle",
+    "address": "Rue Terre-Neuve 153, 1000 Bruxelles",
+    "tel": "02.513.38.01",
+    "situation": ["male", "female", "couple"]
+  },
+  {
+    "id": 8,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "L'Ilôt",
+    "address": "Chaussée de Charleroi 160, 1060 Bruxelles",
+    "tel": "02.538.59.09",
+    "situation": ["female", "couple", "femaleAndChildren", "maleAndChildren", "family"]
+  },
+  {
+    "id": 9,
+    "lat": 50.486,
+    "long": 4.486,
+    "email": "",
+    "web": "",
+    "name": "Accueil Monfort",
+    "address": "Rue de l'Eglise St-Pierre 12-18, 1090 Bruxelles",
+    "tel": "02.424.17.53",
+    "situation": ["male", "female"]
+  }
+]

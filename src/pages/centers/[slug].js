@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../../container/layout'
 import { useTranslate } from '../../hooks/useTranslate'
-import centers from '../../api/processedCenters.json'
+import centers from '../../api/centers.json'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import LocationIcon from '../../icons/location'
 import PhoneIcon from '../../icons/phone'
-import TimeIcon from '../../icons/time'
 import WebIcon from '../../icons/web'
 import MailIcon from '../../icons/mail'
 
@@ -17,7 +16,7 @@ export default function CenterSlug() {
 
   useEffect(() => {
     if (router.query.slug?.length > 0) {
-      setCenter(centers.centers.find((item) => `${item.id}` === router.query.slug))
+      setCenter(centers.find((item) => `${item.id}` === router.query.slug))
     }
   }, [router.query])
 
@@ -32,22 +31,17 @@ export default function CenterSlug() {
           <div className='grid grid-cols-1 gap-4'>
             <Link
               className='flex flex-row gap-5 items-center text-primary-500'
-              href={`https://maps.google.com/?q=${center?.address?.coord?.lat},${center?.address?.coord?.long}`}
+              href={`https://maps.google.com/?q=${center?.lat},${center?.long}`}
             >
               <LocationIcon />
-              <p className='font-bold text-secondary-900/50'>{`${center?.address?.rue}, ${center?.address?.numero}, ${center?.address?.cityHole} ${center?.address?.zip}`}</p>
+              <p className='font-bold text-secondary-900/50'>{`${center?.address}`}</p>
             </Link>
-
-            <div className='flex flex-row gap-5 items-center text-primary-500'>
-              <TimeIcon />
-              <p className='font-bold text-secondary-900/50'>{`${center?.contact?.time}`}</p>
-            </div>
           </div>
         </div>
         <div className='flex flex-row gap-5 justify-evenly items-center text-white my-10'>
           <Link
             className='flex flex-row gap-5 items-center rounded-full p-5 bg-primary-500'
-            href={`tel:${center?.tel[0]}`}
+            href={`tel:${center?.tel}`}
           >
             <PhoneIcon />
           </Link>
