@@ -27,7 +27,6 @@ export default function CenterSlug() {
           <h1 className='text-2xl font-bold p-2 bg-primary-500 text-white rounded-xl'>
             {center?.name}
           </h1>
-          <h2 className='text-xl'>{t('center.informations')}</h2>
           <div className='grid grid-cols-1 gap-4'>
             <Link
               className='flex flex-row gap-5 items-center text-primary-500'
