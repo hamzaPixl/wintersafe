@@ -5,6 +5,7 @@ import MaleIcon from '../../icons/male'
 import FemaleIcon from '../../icons/female'
 import FemaleAndChildrenIcon from '../../icons/femaleAndChildren'
 import FamilyIcon from '../../icons/family'
+import MaleAndChildrenIcon from '../../icons/maleAndChildren'
 
 const situations = [
   {
@@ -26,16 +27,16 @@ const situations = [
     image: <CoupleIcon />,
   },
   {
-    id: 'maleAndChildren',
-    title: 'home.situations.maleAndChildren.title',
-    description: 'home.situations.maleAndChildren.description',
-    image: <CoupleIcon />,
-  },
-  {
     id: 'femaleAndChildren',
     title: 'home.situations.femaleAndChildren.title',
     description: 'home.situations.femaleAndChildren.description',
     image: <FemaleAndChildrenIcon />,
+  },
+  {
+    id: 'maleAndChildren',
+    title: 'home.situations.maleAndChildren.title',
+    description: 'home.situations.maleAndChildren.description',
+    image: <MaleAndChildrenIcon />,
   },
   {
     id: 'family',

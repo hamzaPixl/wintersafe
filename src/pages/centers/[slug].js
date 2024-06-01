@@ -31,7 +31,7 @@ export default function CenterSlug() {
           <div className='grid grid-cols-1 gap-4'>
             <Link
               className='flex flex-row gap-5 items-center text-primary-500'
-              href={`https://maps.google.com/?q=${center?.lat},${center?.long}`}
+              href={`https://${center?.addressLink}`}
             >
               <LocationIcon />
               <p className='font-bold text-secondary-900/50'>{`${center?.address}`}</p>
