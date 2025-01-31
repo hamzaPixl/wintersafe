@@ -47,7 +47,7 @@ export default function Language({ onChange }) {
 
   return (
     <section className='flex flex-col gap-10 my-5 justify-center'>
-      <p className='font-bold text-2xl'>{t('select.language')}</p>
+      <p className='font-bold text-2xl text-primary-600'>{t('select.language')}</p>
       <div className='flex flex-row gap-4 overflow-x-scroll my-5 py-5'>
         {languages.map((language) => (
           <div
@@ -55,8 +55,10 @@ export default function Language({ onChange }) {
             id={language.id}
             onClick={() => onClick(language.id)}
             className={cn(
-              'p-5 border-2 border-secondary-900 rounded-3xl cursor-pointer shadow-lg',
-              locale === language.id ? 'text-primary-500 border-primary-500' : 'text-secondary-900',
+              'p-5 rounded-3xl cursor-pointer hover:text-primary-500 hover:shadow-xl border-2 hover:border-primary-500',
+              locale === language.id
+                ? 'text-primary-500 border-primary-500'
+                : 'text-secondary-900 border-secondary-900',
             )}
           >
             <p className='text-3xl'>{language.flag}</p>

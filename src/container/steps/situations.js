@@ -1,5 +1,4 @@
 import { useTranslate } from '../../hooks/useTranslate'
-import { cn } from '../../utils/cn'
 import CoupleIcon from '../../icons/couple'
 import MaleIcon from '../../icons/male'
 import FemaleIcon from '../../icons/female'
@@ -49,19 +48,14 @@ const situations = [
 export default function Situation({ onChange }) {
   const { t } = useTranslate()
   return (
-    <section className='flex flex-col gap-10 my-5 justify-center'>
-      <p className='font-bold text-2xl'>{t('select.situation')}</p>
-      <div className='flex items-center justify-start gap-5 my-5 py-5 overflow-x-scroll mb-5'>
+    <section className='flex flex-col gap-5 justify-center'>
+      <p className='font-bold text-2xl text-primary-600'>{t('select.situation')}</p>
+      <div className='flex items-center justify-start gap-5 overflow-x-scroll py-5'>
         {situations.map((st) => (
           <div
             key={st.id}
-            id={st.id}
             onClick={() => onChange(st.id)}
-            className={cn(
-              'p-5 rounded-3xl cursor-pointer shadow-lg',
-              'text-secondary-900 hover:text-primary-500',
-              'border-2 border-secondary-900',
-            )}
+            className='p-5 rounded-3xl cursor-pointer text-secondary-900 hover:text-primary-500 hover:shadow-xl border-2 border-secondary-900 hover:border-primary-500'
           >
             {st.image}
           </div>

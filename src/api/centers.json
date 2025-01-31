@@ -1,92 +1,90 @@
 [
   {
     "id": 1,
-    "email": "",
-    "web": "",
+    "type": "shelter",
+    "email": "info@samusocial.be",
+    "web": "https://samusocial.be/",
     "name": "New Samusocial",
     "address": "Boulevard Pointcaré 66-68 - 1070 Anderlecht",
     "addressLink": "maps.app.goo.gl/FRAK5B5Z4sVEABsu5",
-    "tel": "0800/99.340",
+    "tel": "0800.99.340",
+    "details": [
+      "Distribution des places en 2 temps (1er à 14h et 2e à 22h pour combler les places)",
+      "Distribution des places pour les familles à 16h",
+      "Gratuit"
+    ],
     "situation": ["male", "female", "couple", "femaleAndChildren", "maleAndChildren"]
   },
   {
     "id": 2,
-    "email": "",
-    "web": "",
+    "type": "shelter",
+    "email": "equipe@centreariane.be",
+    "web": "https://social.brussels/organisation/7394",
     "name": "Centre d'accueil d'urgence Ariane",
     "address": "Avenue du Pont de Luttre  132 -1190 Forest",
     "addressLink": "maps.app.goo.gl/QGW7LdgFrk13aByL8",
-    "tel": "02/346.66.60",
+    "tel": "02.346.66.60",
+    "details": ["35 places (appeler tous les jours entre 9h30 et 10h)", "Gratuit"],
     "situation": ["male", "female", "couple", "femaleAndChildren", "maleAndChildren"]
   },
   {
-    "id": 3,
-    "email": "",
-    "web": "",
-    "name": "Hébergement Croix-Rouge de Trèves",
-    "address": "Rue de Trèves 82, 1000 Bruxelles",
-    "addressLink": "maps.app.goo.gl/YXS29fH43wF7g59P9",
-    "tel": "0800/99.340",
-    "situation": ["male", "female", "family"]
-  },
-  {
-    "id": 4,
-    "email": "",
-    "web": "",
-    "name": "CASU (Centre d'Action Sociale d'Urgence)",
-    "address": "Rue du Petit Rempart 5, 1000 Bruxelles",
-    "addressLink": "maps.app.goo.gl/VKm7Jd212fqvB911A",
-    "tel": "02.537.82.70",
-    "situation": []
-  },
-  {
-    "id": 5,
-    "email": "",
-    "web": "",
-    "name": "La Source",
-    "address": "Rue de la Senne 78, 1000 Bruxelles",
-    "addressLink": "maps.app.goo.gl/hvVkWwgjyYDPoE7E8",
-    "tel": "02.512.72.04",
-    "situation": ["male", "couple", "femaleAndChildren", "maleAndChildren", "family"]
-  },
-  {
-    "id": 6,
-    "email": "",
-    "web": "",
-    "name": "Albatros - CAW Archipel",
-    "address": "Rue de la Buanderie 40, 1000 Bruxelles",
-    "addressLink": "maps.app.goo.gl/MuqfYEi3pNZGsqnn8",
-    "tel": "02.511.53.30",
-    "situation": ["male", "female", "couple", "femaleAndChildren", "maleAndChildren", "family"]
-  },
-  {
     "id": 7,
-    "email": "",
-    "web": "",
+    "type": "shelter",
+    "email": "secretariat@pierredangle.be",
+    "web": "https://lesmarolles.be/Organization/pierre-dangle-asbl/",
     "name": "Pierre d'Angle",
     "address": "Rue Terre-Neuve 153, 1000 Bruxelles",
     "addressLink": "maps.app.goo.gl/HWEyiTujL6NY3oaj8",
     "tel": "02.513.38.01",
-    "situation": ["male", "female", "couple"]
+    "details": ["Inscription le lundi matin 10h 48 places (places pour 1 semaine)", "Gratuit"],
+    "situation": ["male", "female", "couple", "family"]
   },
   {
     "id": 8,
-    "email": "",
-    "web": "",
-    "name": "L'Ilôt",
+    "type": "shelter",
+    "email": "info@ilot.be",
+    "web": "https://ilot.be/hebergement-temporaire/",
+    "name": "L'Ilôt (femmes et familles)",
     "address": "Chaussée de Charleroi 160, 1060 Bruxelles",
     "addressLink": "maps.app.goo.gl/NPADwE1DnxyWehv26",
     "tel": "02.538.59.09",
+    "details": [
+      "7/7 (de préférence appeler le matin)",
+      "Paiement en fonction de ses revenu (CPAS-Chomage)",
+      "22 places",
+      "1mois + 2x 1 mois renouvelable (si il y a un projet de vie pour la personne) "
+    ],
     "situation": ["female", "couple", "femaleAndChildren", "maleAndChildren", "family"]
   },
   {
     "id": 9,
-    "email": "",
-    "web": "",
-    "name": "Accueil Monfort",
-    "address": "Rue de l'Eglise St-Pierre 12-18, 1090 Bruxelles",
-    "addressLink": "maps.app.goo.gl/wBFUwzMwaiJqeETW9",
-    "tel": "02.424.17.53",
-    "situation": ["male", "female"]
+    "type": "shelter",
+    "email": "info@ilot.be",
+    "web": "https://ilot.be/hebergement-temporaire/",
+    "name": "L'Ilôt (hommes seuls)",
+    "address": "Rue Locquenghien 38, 1000 Bruxelles ",
+    "addressLink": "https://g.co/kgs/KVcXVcD",
+    "tel": "02.217.68.44",
+    "details": [
+      "7/7",
+      "30 eu par jour ou calcul en fonction des revenus",
+      "22 places",
+      "9mois + 3 mois renouvelable (si projet avec la personne)",
+      "Décision prise le mercredi pour intégrer le centre",
+      "Possibilité de dormir une nuit si il y a de la place mais très restreint",
+      "Appeler de préférence en début d'aprem"
+    ],
+    "situation": ["male"]
+  },
+  {
+    "id": 10,
+    "type": "food",
+    "email": "info@porteverte.be",
+    "web": "https://www.porteverte-snijboontje.be/",
+    "name": "La Porte Verte – Snijboontje",
+    "address": "Rue d'Ostende 2 – 1080 Molenbeek",
+    "addressLink": "https://g.co/kgs/8jt3Cpv",
+    "tel": "02.410.85.27",
+    "situation": ["male", "couple", "family", "female", "femaleAndChildren", "maleAndChildren"]
   }
 ]

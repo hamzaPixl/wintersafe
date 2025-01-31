@@ -6,7 +6,7 @@ import MapIcon from '../icons/map'
 
 export default function Footer() {
   return (
-    <footer className='sticky bottom-0 overflow-auto bg-white'>
+    <footer className='bg-white sticky bottom-0 w-full'>
       <div className={`px-2 py-5 w-full max-w-screen-xl mx-auto text-white`}>
         <div className='flex flex-wrap justify-evenly items-center gap-4'>
           <Link

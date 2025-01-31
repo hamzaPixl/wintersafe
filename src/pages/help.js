@@ -5,12 +5,14 @@ import Link from 'next/link'
 import allCenters from '../api/centers.json'
 import NextIcon from '../icons/next'
 import { useRouter } from 'next/router'
+import FoodIcon from '../icons/food'
+import BedIcon from '../icons/bed'
 
 export default function Help() {
   const { t } = useTranslate()
   const router = useRouter()
   const [centers, setCenters] = useState(allCenters)
-  const [, setSituation] = useState('all')
+  const [, setSituation] = useState()
 
   useEffect(() => {
     if (router.query.s) {
@@ -23,7 +25,7 @@ export default function Help() {
     <Layout>
       <div className='mt-5 font-bold leading-normal flex flex-col gap-10 items-left'>
         <p className='text-xl'>{t('home.other.description')}</p>
-        <p className='text-xl opacity-50'>{t('home.contact.title')}</p>
+        <p className='text-xl text-primary-500'>{t('home.contact.title')}</p>
         <div className='grid grid-cols-1 gap-3 w-full mt-2'>
           {centers.map((center, index) => (
             <Link
@@ -32,11 +34,13 @@ export default function Help() {
               className='group bg-white shadow-md rounded-xl px-5 py-8 transition-all duration-300 ease-in-out hover:text-white hover:bg-primary-500'
             >
               <div className='flex flex-row gap-5 items-center justify-between'>
-                <div className='flew flex-col justify-start'>
+                <div className='flex flex-col justify-start'>
                   <p className='font-bold text-lg'>{center.name}</p>
                   <p className='font-light text-lg'>{`${center.address}`}</p>
                 </div>
-                <div className='group-hover:text-white'>
+                <div className='group-hover:text-white group-hover:animate-bounce-x flex flex-row gap-5 items-center'>
+                  {center.type === 'food' && <FoodIcon />}
+                  {center.type === 'shelter' && <BedIcon />}
                   <NextIcon />
                 </div>
               </div>

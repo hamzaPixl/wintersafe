@@ -35,11 +35,11 @@ export default function Home() {
   return (
     <Layout>
       <div className='flex flex-col gap-10'>
-        <div className='mt-5 font-bold leading-normal flex flex-col gap-2 items-left'>
-          <p className='text-xl'>{t('header.greetings')}</p>
-          <p className='text-md text-secondary-900/50'>{t('home.other.description')}</p>
+        <div className='font-bold leading-normal flex flex-col gap-2 items-left'>
+          <p className='text-xl text-primary-600'>{t('header.greetings')}</p>
+          <p className='text-md text-secondary-900'>{t('home.other.description')}</p>
         </div>
-        <div className='flex flex-col gap-5 mt-5'>
+        <div className='flex flex-col gap-5'>
           <Language onChange={setLang} />
           <Situation situation={situation} onChange={setSituation} />
         </div>

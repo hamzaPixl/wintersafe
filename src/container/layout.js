@@ -2,15 +2,14 @@ import React from 'react'
 import SEO from './seo'
 import Footer from '../components/footer'
 import Header from '../components/header'
-import Container from './container'
 
 export default function Layout({ children }) {
   return (
     <>
-      <main className='main'>
+      <main className='text-secondary-900'>
         <SEO />
         <Header />
-        <Container>{children}</Container>
+        <div className='max-w-screen-xl mx-auto px-10 flex flex-col gap-20 my-10'>{children}</div>
         <Footer />
       </main>
     </>

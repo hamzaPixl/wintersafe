@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --secondary-start-rgb: 255, 255, 255;
-  --secondary-end-rgb: 255, 255, 255;
+  --foreground-rgb: 246, 246, 246;
+  --background-start-rgb: 246, 246, 246;
+  --background-end-rgb: 246, 246, 246;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --secondary-start-rgb: 255, 255, 255;
-    --secondary-end-rgb: 255, 255, 255;
+    --foreground-rgb: 246, 246, 246;
+    --background-start-rgb: 246, 246, 246;
+    --background-end-rgb: 246, 246, 246;
   }
 }
 
@@ -59,6 +59,20 @@
   }
 }
 
+@keyframes bounce-x {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 2s infinite;
+}
+
 /* Internet Explorer */
 @-ms-keyframes fadein {
   from {
@@ -69,20 +83,20 @@
   }
 }
 
-#__next,
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: 'Onest', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
+}
+
 main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-.container {
-  background: #f6f6f6;
-  min-height: 932px;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: #f6f6f6;
-  font-family: 'Inter', sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
 }
